@@ -1,45 +1,34 @@
-.App {
-  color: red;
-}
-
-.gr {
+.app-wrapper {
+  margin: 0 auto;
   display: grid;
-  grid-template: 
-    "a a c d" 100px
-    "e f g h" 100px
-    / 200px 200px 200px 200px;
+  width: 1200px;
+  grid-template-areas: 
+  "h h"
+  "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
 }
 
-.item1 {
-  grid-area: a;
-  background-color: black;
 
-}
-.item2 {
-  grid-area: b;
-  background-color: fuchsia;
-}
-.item3 {
-  grid-area: c;
-  background-color: blue;
-}
-.item4 {
-  grid-area: d;
+.header {
+  grid-area: h;
   background-color: green;
 }
-.item5 {
-  grid-area: e;
-  background-color: yellow;
+
+.header img {
+  width: 100px;
 }
-.item6 {
-  grid-area: f;
-  background-color: gray;
+.content img {
+  width: 100%;
+  height: 200px;
 }
-.item7 {
-  grid-area: g;
-  background-color: brown;
+
+.nav {
+  grid-area: n;
+  background-color:rgb(206, 174, 69);
 }
-.item8 {
-  grid-area: h;
-  background-color: chocolate;
+
+.content {
+  grid-area: c;
+  background-color: rgb(69, 69, 165);
 }

@@ -1,22 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Techno from './techno';
-import Header from './header';
-
-
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
 
 
 const App = () => {
   return (
-    <div className="gr">
-      <div className='item1'></div>
-      
-      <div className='item3'></div>
-      <div className='item4'></div>
-      <div className='item5'></div>
-      <div className='item6'></div>
-      <div className='item7'></div>
-      <div className='item8'></div>
+    <div className='app-wrapper'>
+      <Header />
+      <Navbar />
+      <Profile />   
     </div>
   );
 }
