@@ -13,8 +13,8 @@ const LoginForm: FC<InjectedFormProps<formDataType>> = ({handleSubmit, error}) =
 
     return (
         <form onSubmit={handleSubmit}>
-            {createField("email", "email", Input, [requiredField])}
-            {createField("password", "password", Input, [requiredField], {type: "password"})}
+            {createField("www.bagzbanny@mail.ru", "email", Input, [requiredField])}
+            {createField("1a2s3d4f5g", "password", Input, [requiredField], {type: "password"})}
             {createField('', "rememberMe", Input, [], {type: "checkbox"}, 'Remember Me')}
             {captchaUrl && <img alt="no img" src={captchaUrl}></img>}
             {captchaUrl && createField("enter symbols", "captcha", Input, [requiredField])}
