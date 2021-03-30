@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+
+.head {
+  position: relative;
+  grid-area: h;
+  background-color: rgb(224, 224, 224);
+  border-radius: 3px;
+}
+
+.icon {
+  position: absolute;
+  display: inline-block;
+  left: 12px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.login {
+  position: absolute;
+  right: 0px;
+  margin-right: 5px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  float: right;
+}
+
+.logout {
+  right: 0px;
+  margin-right: 5px;
+}
+
+.test{
+  display: inline;
+}
+
+.buttonLogout {
+  font-weight: 600 !important;
+}
+
+.userName {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(20, 20, 20);
+}

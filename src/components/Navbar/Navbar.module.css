@@ -1,8 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+
 .nav {
+  padding: 10px;
   grid-area: n;
-  background-color:rgb(206, 174, 69);
+  background-color: rgb(224, 224, 224);
+  border-radius: 3px;
+  height: 200px;
+}
+.navItem:hover {
+ background-color: rgb(212, 211, 211);
+ border-radius: 3px;
+ transition: 0.15s;
 }
 
-.item {
-  color: #FFF;
+.decoration{
+  text-decoration: none;
+}
+.navItem {
+  transition: 0.15s;
+  background-color: rgb(224, 224, 224);
+  padding-top: 4px;
+  padding-left: 10px;
+  color: #3f51b5;
+}
+.navItemIcon {
+  padding-right: 7px;
+  display: inline;
+}
+.navItemText {
+  position: relative;
+  top: 4px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top;
+  display: inline;
+  color: rgb(20, 20, 20);
+  font-size: 11pt;
+}
+.a.active {
+  /* color: gold; */
 }
