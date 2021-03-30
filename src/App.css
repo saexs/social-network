@@ -1,13 +1,15 @@
 .app-wrapper {
+  padding-left: 15px;
+  padding-right: 30px;
   margin: 0 auto;
   display: grid;
-  width: 1000px;
+  max-width: 1000px;
   grid-template-areas: 
   "h h"
   "n c"
   "w c";
-  grid-template-rows: 60px 200px 1fr;
-  grid-template-columns: 200px 1fr;
+  grid-template-rows: 5% 20% auto;
+  grid-template-columns: 20% 80%;
   row-gap: 20px;
   column-gap: 20px;
 }
@@ -24,4 +26,25 @@
 }
 .weatherYandex {
   position: absolute;
+}
+@media (max-width: 850px) {
+  .weatherYandex {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .app-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: grid;
+    min-width: none;
+    grid-template-areas: 
+    "h"
+    "n"
+    "c";
+    grid-template-rows: 45px auto auto;
+    grid-template-columns: 100%;
+    row-gap: 10px;
+  }
 }

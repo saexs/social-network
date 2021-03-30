@@ -23,7 +23,7 @@ const PostForm: FC<InjectedFormProps<string>> = ({handleSubmit}) => {
         <form onSubmit={handleSubmit} className={classes.form}>
             <div>
                 <Field placeholder={"Your post text"} name={'postText'} component={Textarea}
-                maxLength={300} className={classes.formText} rows={6} cols={80}></Field>
+                maxLength={300} className={classes.formText} ></Field>
             </div>
             <div>
                 <button id='addPostButton' className={classes.formButton}>Add post</button>

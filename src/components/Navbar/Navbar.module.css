@@ -39,3 +39,21 @@
 .a.active {
   /* color: gold; */
 }
+@media (max-width: 700px) {
+ .navItemText{
+   display: none;
+ }
+ .nav {
+   display: grid;
+   height: auto;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+ }
+ .navItem {
+  padding-left: 0px;
+  display: grid;
+ }
+ .navItemIcon {
+    justify-self: center;
+ }
+}
